@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Note;
 
 class NotesController extends Controller
 {
@@ -31,7 +32,7 @@ class NotesController extends Controller
             'content' => 'string',
         ]);
         // saving/storing the title and content into the database
-        Note::create(validated);
+        $note = Note::create($validated);
         
         return response()->json([
             'success' => true,
