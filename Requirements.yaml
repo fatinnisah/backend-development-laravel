@@ -1,0 +1,24 @@
+Requirements
+
+- Functional Requirements
+  - create, update, delete, app
+  - has authentication, authorization
+  - has user account
+- Non Functional Requirement
+  - 99.9% uptime - high availability
+  - p99 latency
+
+
+  # nota app
+  -Model
+    -User - users management, create account, login
+    -Note - notes management
+  -Controller (logic)
+    -NotesController
+    -UserController
+  -DB
+    -'notes'- to store nota-nota
+      -title - tajuk nota, (string)
+      -content - isi nota, (text)
+
+    model in singular form will automatically connect to its plural form table
